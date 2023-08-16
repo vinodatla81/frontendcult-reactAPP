@@ -1,0 +1,20 @@
+{
+  "name": "frontendcult-reactapp",
+  "version": "1.0.0",
+  "description": "this is my react app",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vinod",
+  "license": "ISC",
+  "keywords": [
+    "reactapp",
+    "javascript",
+    "jsx"
+  ],
+  "dependencies": {
+    "D": "^1.0.0",
+    "parcel": "^2.9.3"
+  }
+}
