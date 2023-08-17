@@ -1,14 +1,9 @@
-/**
- * <div id="parent">
- * <div id="child">
- *     <h1>Helloh1</h1>
- * <div>
- * </div>
- */
+import React from "react";
+import ReactDOM from "react-dom";
 
 const h1tag = React.createElement("div", { id : 'parent'}, 
 React.createElement("div",{ id : "child"}),
-React.createElement("h1",{ id : "some"}, "Hello All, I am from Reactjs and NestedH1"));
+React.createElement("h1",{ id : "some"}, "Hello All 22 ccc, I am from Reactjs and NestedH1"));
 
 console.log(h1tag);
 
