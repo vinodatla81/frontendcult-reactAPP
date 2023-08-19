@@ -1,0 +1,17 @@
+.my-div {
+    color : blue;
+}
+
+.header {
+    padding : 30px;
+    background-color: #00539c;
+}
+.content {
+    padding : 30px;
+    background-color : #eea47f;
+    height : 300px;
+}
+.footer {
+    padding : 30px;
+    background-color : #00539c; 
+}
