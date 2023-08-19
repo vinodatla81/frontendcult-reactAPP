@@ -31,14 +31,14 @@ const HeaderComponent = () => (
     <div class ="header"><h2>my Header</h2><ButtonCOM/></div>
 );
 
-const ContentComponent = () => {
-    <div class ="content">
+const ContentComponent = () =>  { 
+    return(<div class ="content">
     <h2>The user name: {userDetails.username}</h2>
-    </div>
+    </div>)    
 };
 
 const FooterComponent = () => {
-    <div class ="footer"><h2>my content</h2></div>
+    return(<div class ="footer"><h2>my content</h2></div>)    
 };
 
 const HomepageComponent = () => (
