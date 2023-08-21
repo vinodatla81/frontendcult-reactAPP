@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <!--
+        1) BS Grid
+        2) Tables
+        3)Colors,bg colors (primary, secondary, success, info, warning, danger, mute)
+        4) BS Alerts. (alert alert-success alert-info alert-danger alert-warning)
+        5)Buttons (btn btn-primary btn-secondary ..,)
+        6)Forms (Button.Submit,Reset)
+    -->
+    <!-- Bootstrap is a combination of html,css and javascript -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 bg-primary p-5">Col1</div>
+            <div class="col-md-8 bg-dark p-5 text-white">
+                <div class="row">
+                    <div class="col bg-primary">2-1</div>
+                    <div class="col bg-warning">2-2</div>
+                </div>
+            </d iv>
+        </div>
+        <div class="">
+            <p class="text-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempore quis quod ducimus accusantium sit nostrum suscipit at id provident dignissimos, quae similique qui ad placeat, est quos ex? Dolores voluptates aperiam, error ipsam nisi quam quasi perspiciatis tempora aut reprehenderit illum numquam.</p>
+            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempore quis quod ducimus accusantium sit nostrum suscipit at id provident dignissimos, quae similique qui ad placeat, est quos ex? Dolores voluptates aperiam, error ipsam nisi quam quasi perspiciatis tempora aut reprehenderit illum numquam.</p>
+            <p class="text-success">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempore quis quod ducimus accusantium sit nostrum suscipit at id provident dignissimos, quae similique qui ad placeat, est quos ex? Dolores voluptates aperiam, error ipsam nisi quam quasi perspiciatis tempora aut reprehenderit illum numquam.</p>
+            <p class="text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempore quis quod ducimus accusantium sit nostrum suscipit at id provident dignissimos, quae similique qui ad placeat, est quos ex? Dolores voluptates aperiam, error ipsam nisi quam quasi perspiciatis tempora aut reprehenderit illum numquam.</p>
+            <p class="text-warning">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempore quis quod ducimus accusantium sit nostrum suscipit at id provident dignissimos, quae similique qui ad placeat, est quos ex? Dolores voluptates aperiam, error ipsam nisi quam quasi perspiciatis tempora aut reprehenderit illum numquam.</p>
+            <p class="text-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempore quis quod ducimus accusantium sit nostrum suscipit at id provident dignissimos, quae similique qui ad placeat, est quos ex? Dolores voluptates aperiam, error ipsam nisi quam quasi perspiciatis tempora aut reprehenderit illum numquam.</p>
+        </div>
+        <div class="bg-info p-3"></div>
+        <div class="bg-warning p-3"></div>
+        <div class="bg-danger p-3"></div>        
+        <table class="table table-hover">
+            <tr>
+                <th>S.No:</th>
+                <th>Name</th>
+                <th>Mobile No:</th>
+                <th>Email:</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Ram</td>
+                <td>8331834181</td>
+                <td>vinod@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Laxman</td>
+                <td>48973487987</td>
+                <td>Laxman@gmail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Bharat</td>
+                <td>8998738778</td>
+                <td>bharat@gmail.com</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>shatrug</td>
+                <td>8998487877</td>
+                <td>shatrug@gmail.com</td>
+            </tr>
+        </table>
+        <!-- BS Alerts -->
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button> <!-- It includes html,css and js.., so manam click cheste remove avtadi-->
+            <strong>Success!</strong> You are successfully logged to the admin password!</p>            
+        </div>
+        <div class="alert alert-danger">
+            <strong>Error!</strong> Your Password is Wrong!</p>
+        </div>
+        <div class="alert alert-info">
+            <strong>Info!</strong> Please check below link!</p>
+        </div>
+        <div class="alert alert-warning">
+            <strong>Warning!</strong> Please check below link!</p> 
+        </div>
+        <!-- BS Button, button-outline -->
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-danger">Danger</button><br>
+        <!-- Hover cheste color display avtadi indulo -->
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+    </div>
+</body>
+</html>

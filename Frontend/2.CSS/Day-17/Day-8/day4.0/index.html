@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New mobiles store</title>
+        <style>
+            .text-box {
+                background-color: beige;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="savedata.php" method="get">
+        <p><label for="fname">First name: </label><input type="text" name="fname" value="" id="" class="text-box"></p>
+        <p><label for="Password">Password: </label><input type="password" name="password" value="" id="" class="text-box"></p>
+        <p><label for="em">email: </label><input type="text" name="email" value="" id="" class="text-box"></p>
+        <p><label for="dateof">DOB: </label><input type="date" name="dob" value="" id="" class="text-box"></p>
+        <p>
+            <label for="gener">Gender: </label>
+            <input type="radio" name="gerne" value="male" id="gender">male
+            <input type="radio" name="gerne" value="female" id="gender">female
+        </p>
+        <p>
+            <label for="hob">Hobbies: </label>
+            <input type="checkbox" name="hobbies" value="movies" id="">movies
+            <input type="checkbox" name="hobbies" value="books" id="">Books
+            <input type="checkbox" name="hobbies" value="sports" id="">sports
+            <input type="checkbox" name="hobbies" value="mobile" id="">mobile
+        </p>
+        <p>
+            <label for="pass">Phone number: </label>
+            <input type="number" name="mobile" value="" maxlength="10">
+            <input type="file">
+        </p>
+        <p>
+            <label for="edu">Education: </label>
+            <select name="education" id="" >
+                <option value="b.tech">B.tech</option>
+                <option value="b.com">B.com</option>
+                <option value="b.p">B.ph</option>
+                <option value="m.tech">M.tech</option>
+            </select>
+        </p>
+        <input type="submit" value="submit">
+
+        </form>
+    </body>
+
+</html>
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27-JS- Variables,operators,methods/functions</title>
+    
+</head>
+<body>
+    <script>
+        // Arithematic operations
+        // Adding +
+        // sub -
+        // mul *
+        // Division /
+        // Percentage %
+        // Increment ++
+        // Decrement --
+
+       
+        console.log(grand_total);
+
+        var a = 2;
+        var b = 3;
+        var c = 5;
+        var d = 6;
+        
+        var a = 300;
+        a++;  600 // Increment
+        a--; 150 // decrement
+        console.log(a++);
+    
+        // console.log(a++)
+        // method/function
+        A java script function is a set of rules , set of statements,set of lines of code. that will execute whenever user want.
+
+        // function fun_name() {};
+
+        function basic_calculation() {
+             // Price details:
+        var total_tickets = 4;
+        var tickets_price = 300;
+        var total_price = total_tickets * tickets_price;
+        var gst_gov = 18;
+        var total_gst = total_price % gst_gov; //13
+        var grand_total = total_price + total_gst; // 1200(assume)
+        };
+
+        function food_calculations() {
+             // Adding food calculations:
+        var Popcorn_cheese = 200;
+        var selected = 3;
+        var total_food_price = Popcorn_cheese * selected; // 600
+        };
+
+        function donation_price() {
+             // Donation
+        var base_value = 1;
+        var price_of_donation = base_value * total_tickets; //4
+        };
+
+        function payable_amount() {
+                    // Payable Amount
+        var payable_amount =  grand_total + total_food_price + price_of_donation; // 1804
+        document.getElementById('price').innerHTML = payable_amount;
+        };
+         
+        Here we take sample as a price 
+    </script>
+</body>
+</html>

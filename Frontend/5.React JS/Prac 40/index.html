@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> <!--This,call,Arrow functions-->
+<body>
+    <script>
+        // this is refer to an object(self)
+        const train = {
+            trainname : 'Vandebharat',
+            speedlimit : 300,
+            coaches : 30,
+            colr : 'Blue and white',
+            sleeper : false
+        }            
+                
+        const train2 = {
+            trainname : 'Vandebharat',
+            speedlimit : 250,
+            coaches : 20,
+            colr : 'green and sand',
+            sleeper : false,
+            trainfulldetails : function() {
+                console.log(this);
+            }            
+        } 
+
+        // train.trainfulldetails();
+        
+        // Call
+
+        const phonedetails = {
+            getfullPhonedetails : function() {
+                console.log(this);
+            }
+        }
+         const mobile = {
+            mobile : 'Iphone12',
+            color : 'red',
+            price : 50000
+         };
+
+         const mobile2 = {
+            mobile : 'Iphone13',
+            color : 'green',
+            price : 60000
+         };
+
+         const mobile3 = {
+            mobile : 'Iphone14 plus',
+            color : 'blue',
+            price : 75000 
+         };
+
+         function addtwonumbers(a,b,c) {
+            console.log(a);
+         }
+         addtwonumbers(mobile,mobile2,mobile3);
+         phonedetails.getfullPhonedetails.call(mobile3);
+         train2.trainfulldetails.call(train);
+
+            // Arrow function
+        // function addtwonumbers(a,b) {
+        //     console.log(a+b);
+        // }  
+
+    addtwonumbers = (a,b) => { console.log(a+b); };
+
+    addtwonumbers(2,6);
+
+    if(true) {
+        console.log('yes');
+    } else {
+        console.log('no');
+    }
+
+    // condition : console.log('yes') : console.log('no');
+        
+    </script>
+</body>
+</html>

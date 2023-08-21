@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Call, Apply, Bind</title>
+</head>
+<body>
+    <script>
+        let name = {
+            firstname : "Manohar",
+            lastname : "Lotlapalli",
+            printFullname : function () {
+                console.log(this.firstname + ' ' + this.lastname)
+            }
+        }
+
+        // Invoke function
+        name.printFullname();
+
+        // Call function
+        let name2 = {
+            firstname : "virat",
+            lastname : "kohli"
+        }
+
+        let name3 = {
+            firstname : "sachin",
+            lastname : "Tendulkar"
+        }
+        // function printname (nameobj) {
+        //     console.log(nameobj.firstname + ' ' + nameobj.lastname);
+        // }
+        // printname (name2);
+        name.printFullname.call(name2);
+        name.printFullname.call(name3);
+
+        let movie1 = {
+            name : 'Jailer',
+            hero : 'Rajini',
+            Director : 'NELSON'
+        }
+        let movie2 = {
+            name : 'Vikram',
+            hero : 'Rolex sir',
+            Director : 'Lokesh'
+        }
+
+        let displaymoviename = function(lang1, lang2, lang3) {
+            console.log(this.name + ' ' + this.hero + ' ' + this.Director + ' ' + lang1 + ' ' + lang2 + ' ' + lang3);
+        }
+        displaymoviename.call(movie1, 'Tamil', 'Tamil', 'Malayalam');
+        displaymoviename.apply(movie2, ['Telugu', 'Tamil', 'Malayali']);
+
+        // Bind
+        // Bind is same as call method only but the difference is it will return a method
+        let showname =  displaymoviename.call(movie1, 'Tamil', 'Tamil', 'Malayalam');
+        console.log(showname);
+        showname();
+
+    
+
+    </script>
+</body>
+</html>

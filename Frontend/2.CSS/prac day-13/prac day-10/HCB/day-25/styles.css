@@ -1,0 +1,14 @@
+body {
+    background-color: #181d31 !important;
+    margin: 0;
+    padding: 0;
+}
+.brand-orange {
+    background-color: #fb6542;
+}
+.navbar-brand {
+    color: white;
+}
+a {
+    color: white !important;
+}

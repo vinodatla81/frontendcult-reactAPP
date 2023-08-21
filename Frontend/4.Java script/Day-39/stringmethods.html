@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-String Methods</title>
+</head>
+<body>
+    <input type="search" name="data" id="data">
+    <input type="button" value="search" onclick="searchdata()">
+    <p id="result"></p>
+    <script>
+        // let a=10;
+        // let b=20;
+        // console.log(a=b);
+        function searchdata() {
+            let searchData = document.getElementById('data').value;
+            let exstring = "html css js react php python git"; // exstring means existing string;
+            if(exstring.includes(searchData)) {
+                document.getElementById('result').innerHTML = exstring;
+            } else {
+                document.getElementById('result').innerHTML = 'no data available';
+                
+            }
+        }
+        // String Methods - string length
+        let city = "Hyderabad is big city";
+        console.log(city.length);
+
+        // Get string by position - charAt
+        console.log(city.charAt(2))
+
+        // For loop with String
+        // for(let i=o; i<city.length; i++) {
+        // console.log(city.charAt(i));
+       // }
+
+        // slice
+        let mobiles = "Apple, vivo, samsung, oneplus";
+        console.log(mobiles.slice(13,20));
+
+        // concat -- adding/mixing
+        let fname = "manohar";
+        let lname = "lotlapalli";
+        
+        console.log(fname.concat(" ", lname)); // by using concat
+        console.log(fname + lname); // by using plus operator
+
+        let train = "narayanadri";
+        console.log('train name is:' + ' ' + train); // by using + we use more in realtime
+
+        // Replace the string
+        let laptops = "lg, HP, Dell";
+        console.log(laptops.replace('HP','Lenovo'));
+
+        // toLowerCase
+        let mytext = "MY NAME IS MANOHAR";
+        console.log(mytext.toLocaleLowerCase());
+
+        // toUpperCase
+        let mytext2 = "this is small letters";
+        console.log(mytext2.toLocaleUpperCase());
+
+        // Trimming the string
+        let mynewtext = "    click here to activate windows    ";
+        console.log(mynewtext.trim());
+
+        // By Position
+        let myphone = 'vivo12';
+        console.log(myphone[3]);
+
+        // Search string
+        // includes
+        let mycourse = "this course includes html css js react";
+        console.log(mycourse.includes('html')); // true or false
+
+        // indexOf 
+        // (manam itchina word ni ekkada vundo check cheyadaniki use chestamu (indexOf))
+        console.log(mycourse.indexOf('js'));
+
+        //Startswith
+        console.log(mycourse.startsWith('this')); // true
+
+        //endwith
+        console.log(mycourse.endsWith('js')); //false
+    </script>
+</body>
+</html>
