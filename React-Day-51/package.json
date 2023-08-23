@@ -1,0 +1,27 @@
+{
+  "name": "frontendcult-reactapp",
+  "version": "1.0.0",
+  "description": "this is my react app",
+  "main": "App.js",
+  "scripts": {
+    "start" : "parcel index.html",
+    "build" : "parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vinod",
+  "license": "ISC",
+  "keywords": [
+    "reactapp",
+    "javascript",
+    "jsx"
+  ],
+  "dependencies": {
+    "D": "^1.0.0",
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
