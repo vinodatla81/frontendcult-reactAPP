@@ -8,7 +8,7 @@ const h1tag = React.createElement("div", { id : "parent"}, "some text");
 // JSX - 5%
 // Babel - 
 let name = "Vinod";
-let mobile = "8331834181"
+le t mobile = 8331834181
 const jsXdivision = <div id="myid" className="my-div"><p>my name is  { name } and mobile numer is {mobile}</p>
 <p id="name">rregrjhhhji</p> JSX
 </div>;
@@ -24,7 +24,7 @@ const userDetails = {
     username : "vinod",
     mobile : 8331834181
 }
-const ButtonCOM = () => (
+const ButtonCOM = () => (   // ButtonCOM means button component
     <input type="text"/>
 );
 const HeaderComponent = () => (

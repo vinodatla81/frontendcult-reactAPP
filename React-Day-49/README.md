@@ -2,7 +2,8 @@
 
 # to run the app run
 # npm install
-# npx parcel index.html
+# npm run start
+# npm run build
 
 # to start the project do run below commands
 npm install

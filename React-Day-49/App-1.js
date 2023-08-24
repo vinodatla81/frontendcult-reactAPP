@@ -8,7 +8,7 @@ const h1tag = React.createElement("div", { id : "parent"}, "some text");
 // JSX - 5%
 // Babel - 
 let name = "Vinod";
-let mobile = 8331834181
+let mobile = "8331834181"
 const jsXdivision = <div id="myid" className="my-div"><p>my name is  { name } and mobile numer is {mobile}</p>
 <p id="name">rregrjhhhji</p> JSX
 </div>;
@@ -24,11 +24,12 @@ const userDetails = {
     username : "vinod",
     mobile : 8331834181
 }
-const ButtonCOM = () => (   // ButtonCOM means button component
+const ButtonCOM = () => (
     <input type="text"/>
 );
 const HeaderComponent = () => (
-    <div class ="header"><h2>my Header</h2><ButtonCOM/></div>
+    <div class ="header">
+        <h2>{ userDetails.username}, What's on your mind</h2></div>
 );
 
 const ContentComponent = () =>  { 
@@ -44,6 +45,7 @@ const FooterComponent = () => {
 const HomepageComponent = () => (
     <div className ="container">
         <HeaderComponent></HeaderComponent> 
+        <ContentComponent></ContentComponent>
         <ContentComponent></ContentComponent>
         <FooterComponent></FooterComponent>
     </div>
